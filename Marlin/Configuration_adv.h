@@ -106,8 +106,8 @@
 // extruder temperature is above/below EXTRUDER_AUTO_FAN_TEMPERATURE.
 // Multiple extruders can be assigned to the same pin in which case
 // the fan will turn on when any selected extruder is above the threshold.
-#define EXTRUDER_0_AUTO_FAN_PIN -1
-#define EXTRUDER_1_AUTO_FAN_PIN -1
+#define EXTRUDER_0_AUTO_FAN_PIN 7
+#define EXTRUDER_1_AUTO_FAN_PIN 8
 #define EXTRUDER_2_AUTO_FAN_PIN -1
 #define EXTRUDER_3_AUTO_FAN_PIN -1
 #define EXTRUDER_AUTO_FAN_TEMPERATURE 50
@@ -120,7 +120,7 @@
 
 // @section homing
 
-#define ENDSTOPS_ONLY_FOR_HOMING // If defined the endstops will only be used for homing
+//#define ENDSTOPS_ONLY_FOR_HOMING // If defined the endstops will only be used for homing
 
 // @section extras
 
@@ -159,7 +159,7 @@
 #endif // Z_DUAL_STEPPER_DRIVERS
 
 // Same again but for Y Axis.
-//#define Y_DUAL_STEPPER_DRIVERS
+#define Y_DUAL_STEPPER_DRIVERS
 
 // Define if the two Y drives need to rotate in opposite directions
 #define INVERT_Y2_VS_Y_DIR true
